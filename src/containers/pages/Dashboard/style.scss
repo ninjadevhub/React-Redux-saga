@@ -1,0 +1,146 @@
+.nameContainer {
+  h3 {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+// old css
+
+.hover-highlight {
+  transition: all 0.2s linear !important;
+
+  &:hover {
+    color: #343562 !important;
+    background-color: #F9F9F9 !important;
+  }
+}
+
+.buttonLink {
+  background: url(/assets/icons/arrow-right-gray.svg) 95% 50% no-repeat;
+  border-top: 1px solid #E6E9ED;
+  display: block;
+  margin: 0 -15px;
+  padding: 15px 45px 15px 20px;
+
+  img {
+    float: left;
+    margin-right: 15px;
+    margin-top: 14px;
+  }
+
+  h5 {
+    margin-bottom: 3px;
+    transition: color 0.2s linear;
+  }
+
+  p {
+    color: #7A7492;
+    line-height: 1.3;
+    margin-bottom: 5px;
+  }
+}
+
+.disabledButton {
+  color: #343562 !important;
+  background-color: #F9F9F9 !important;
+  h5 {
+    color: #BBB;
+  }
+
+  p {
+    color: #CCC;
+  }
+}
+
+.startActions {
+  div:last-of-type {
+    border-bottom: 1px solid #E6E9ED;
+  }
+}
+
+.card-hover-highlight {
+  background: url(/assets/icons/arrow-right-gray.svg) 96% 50% no-repeat;
+  color: #002248;
+  display: block;
+  font-size: 18px;
+  padding: 16px 15px;
+  transition: all 0.2s linear;
+
+  &:hover,
+  &:focus {
+    color: #343562 !important;
+    background-color: #F9F9F9 !important;
+    transition: all 0.2s linear !important;
+  }
+
+  img {
+    margin-right: 8px;
+  }
+}
+.page-dashboard {
+  .training-videos {
+    padding-bottom: 24px;
+    padding-top: 24px;
+
+    h6 {
+      margin-bottom: 24px;
+    }
+  }
+  .video-link {
+    color: $body-color;
+    display: block;
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bold;
+    text-align: center;
+
+    .video-preview {
+      align-items: center;
+      background-color: $gray-200;
+      background-position: 50%;
+      background-size: cover;
+      border-radius: $border-radius;
+      box-shadow: $box-shadow-dark;
+      display: flex;
+      height: 64px;
+      justify-content: center;
+      margin-bottom: $gutter-sm / 2;
+      overflow: hidden;
+      position: relative;
+      transition: all 0.1s linear;
+
+      &:after {
+        background: rgba($primary, 0.75);
+        border-radius: $border-radius-sm;
+        content: " ";
+        display: block;
+        height: 30px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        transform: translate(-50%, -50%);
+      }
+
+      img {
+        margin-left: 4px;
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    &:hover {
+      .video-preview {
+        transform: scale(1.05);
+      }
+    }
+
+    span {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}

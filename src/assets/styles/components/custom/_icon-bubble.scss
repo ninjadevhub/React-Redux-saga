@@ -1,0 +1,42 @@
+.icon-bubble {
+  align-items: center;
+  background-color: $white;
+  border-radius: 50%;
+  box-shadow: $box-shadow-line, $box-shadow-sm;
+  color: $gray-300;
+  display: flex;
+  flex-direction: column;
+  font-size: $font-size-xs;
+  flex-shrink: 0;
+  justify-content: center;
+  min-height: 50px;
+  min-width: 50px;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.15s linear;
+
+  &.large {
+    min-height: 90px;
+    min-width: 90px;
+  }
+
+  h1, h2, h3, h4, h5 {
+    color: $primary;
+  }
+
+  .badge {
+    font-size: $font-size-sm;
+    padding-top: 0.289rem;
+  }
+
+  small {
+    font-weight: 700;
+  }
+}
+
+a:hover {
+  .icon-bubble {
+    box-shadow: $box-shadow-line-dark, $box-shadow-sm;
+    transform: scale(1.07);
+  }  
+}

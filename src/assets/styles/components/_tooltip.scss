@@ -1,0 +1,19 @@
+.tooltip-inner {
+  padding: $gutter-sm;
+}
+
+.tip-icon {
+  background: url(/icons/info.svg) 50% / 100% no-repeat;
+  display: block;
+  height: 25px;
+  opacity: 0.5;
+  position: absolute;
+  right: 10px;
+  top: 11px;
+  width: 25px;
+  transition: opacity 0.2s linear;
+
+  &:hover {
+    opacity: 1;
+  }
+}

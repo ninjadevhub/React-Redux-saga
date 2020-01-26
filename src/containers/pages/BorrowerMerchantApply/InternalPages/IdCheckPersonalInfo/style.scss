@@ -1,0 +1,28 @@
+.pt-10 {
+    padding-top: 10px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.pt-30 {
+    padding-top: 30px !important;
+}
+.mt--30 {
+    margin-top: -30px;
+}
+.ml-30 {
+    margin-left: 30px !important;
+}
+.pl-30 {
+    padding-left: 30px !important;
+}
+.field-label {
+    text-align: right;
+    span {
+        width: calc(100% - 10px);
+    }
+}
+.form-note {
+    color: #b64b67;
+    font-size: 12px;
+}

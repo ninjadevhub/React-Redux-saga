@@ -1,0 +1,92 @@
+.btn {
+  border: 0;
+  box-shadow: $box-shadow-dark;
+  font-size: $font-size-sm;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: .813rem $grid-gutter-width;
+  text-transform: uppercase;
+
+  &.btn-sm {
+    padding: .469rem $grid-gutter-width;
+  }
+
+  &.btn-lg {
+    align-items: center;
+    display: flex;
+    font-size: $font-size-base;
+    justify-content: center;
+    padding: 1rem $gutter-lg;
+
+    img {
+      margin-left: 12px;
+      width: 16px;
+    }
+  }
+
+  &.btn-custom {
+    padding: 1rem 80px;
+  }
+
+  &.btn-secondary {
+    background-color: $white;
+    color: $gray-600;
+
+    &:hover {
+      color: $gray-900;
+    }
+  }
+
+  &.btn-disagree {
+    background-color: $white;
+    color: $gray-600;
+
+    &:hover {
+      color: $gray-900;
+    }
+  }
+
+  &.btn-link {
+    box-shadow: none;
+
+    &.dark {
+      color: $white;
+    }
+  }
+
+  &.disabled {
+    background-color: $gray-200;
+    box-shadow: none;
+    color: $gray-600;
+    cursor: no-drop;
+  }
+
+  &.muted {
+    opacity: 0.25;
+  }
+}
+
+.btn-icon {
+  align-items: center;
+  display: flex;
+  height: 36px;
+  justify-content: center;
+  padding: 0;
+  width: 36px;
+  &.app-status-button{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+  }
+}
+
+.loadingWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-link {
+  text-decoration: underline;
+  cursor: pointer;
+}

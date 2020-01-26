@@ -1,0 +1,93 @@
+.card {
+  border: 0;
+  border-radius: $border-radius-lg;
+  box-shadow: $box-shadow;
+  margin-bottom: $grid-gutter-width;
+  overflow: hidden;
+  transition: all 0.15s linear;
+
+  &.bg-primary {
+    .btn-primary {
+      background-color: darken($primary, 10%) !important;
+
+      &:last-of-type {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+
+  > .btn {
+    border-radius: $border-radius-lg;
+  }
+
+  > .btn-group {
+    margin: 0 $grid-gutter-width;
+    width: calc(100% - 50px);
+  }
+
+  > .card-body {
+    box-shadow: $box-shadow-headers;
+    margin-left: $grid-gutter-width;
+    padding-left: 0;
+  }
+
+  &[class*='border-'] {
+    border-width: 3px;
+    border-style: solid;
+  }
+
+  &.pull-30 {
+    @include media-breakpoint-up(md) {
+      margin-left: -$grid-gutter-width;
+      margin-right: -$grid-gutter-width;
+    }
+  }
+
+  &.dark-shadow {
+    box-shadow: $box-shadow-dark;
+  }
+}
+
+a.card {
+  &:hover {
+    box-shadow: $box-shadow-dark;
+    text-decoration: none;
+    transform: scale(1.02);
+
+    &.bg-primary {
+      .btn-primary {
+        background-color: darken($primary, 17%) !important;
+      }
+    }
+  }
+}
+
+.card-header {
+  background: none;
+  border: 0;
+  color: $headings-color;
+  font-size: $h5-font-size;
+  font-weight: $headings-font-weight;
+  padding: 0.813rem $grid-gutter-width;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  
+  &.has-tooltip {
+    padding-left: $gutter-lg;
+    padding-right: $gutter-lg;
+  }
+}
+
+.card-body {
+  padding: $grid-gutter-width;
+
+  &.no-border {
+    box-shadow: none;
+  }
+}
+
+.card-footer {
+  background-color: $white;
+}

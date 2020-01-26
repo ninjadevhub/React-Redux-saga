@@ -1,0 +1,22 @@
+.pageContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1440px;
+  padding: ($lendingusa_spacing_xlg - 6) 30px $lendingusa_spacing_xlg 40px;
+  flex: 1 0 auto;
+  position: relative;
+  min-height: 400px;
+
+  @media (max-width: 576px) {
+    padding: ($lendingusa_spacing_xlg - 6) 30px $lendingusa_spacing_xlg;
+  }
+}

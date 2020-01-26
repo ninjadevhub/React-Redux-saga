@@ -1,0 +1,22 @@
+.error {
+  padding-left: 22px;
+  font-size: 12px;
+  color: $accent_color;
+}
+
+.checkbox {
+  display: flex;
+}
+
+.input {
+  margin-top: $lendingusa_spacing_xs - 12 !important;
+}
+
+.label {
+  padding: 0 !important;
+  line-height: 1rem;
+}
+
+.container {
+  padding-bottom: $lendingusa_spacing_xs - 2;
+}

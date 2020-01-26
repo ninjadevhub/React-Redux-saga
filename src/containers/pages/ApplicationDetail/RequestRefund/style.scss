@@ -1,0 +1,56 @@
+.requestRefund{
+  width: 500px;
+  background: white;
+  padding: 20px;
+  height: 100%;
+  position: relative;
+  .formHeader{
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    img {
+      width: 22px;
+      position: absolute;
+      left: 0px;
+      top: 5px;
+      cursor: pointer;
+    }
+  }
+  .formBody{
+    // height: calc(100% - 100px);
+    text-align: center;
+    .div-separator{
+      border-bottom: 1px solid rgb(242, 241, 240);
+      margin: 20px 0px;
+    }
+    .div-space{
+      height: 30px;
+    }
+    .checkbox{
+      .label{
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+    .containerToggle{
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+    .containerCheckbox{
+      display: flex;
+      align-items: baseline;
+    }
+    .chkCopyright{
+      text-align: left;
+      line-height: 18px;
+      font-size: 13px;
+      color: #797a93;
+    }
+  }
+  .formFooter{
+    text-align: center;
+    left: 40px;
+  }
+}

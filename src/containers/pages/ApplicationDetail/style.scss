@@ -1,0 +1,25 @@
+.has-id-img {
+  width: 24px;
+  margin-left: 10px;
+  margin-top: -4px;
+}
+.smarty-upload-loading {
+  display: flex;
+  justify-content: center;
+  width: calc(100% - 20px);
+  position: absolute;
+  z-index: 999;
+  text-shadow: none;
+  text-align: left;
+  text-decoration: none;
+  margin-top: 30px;
+}
+.upload-header {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  span {
+    color: #2B445F;
+    font-weight: 500;
+  }
+}

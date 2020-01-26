@@ -1,0 +1,11 @@
+p {
+  font-size: 12px;
+}
+.doc-info {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .doc-info {
+    margin-top: 10px;
+  }
+}

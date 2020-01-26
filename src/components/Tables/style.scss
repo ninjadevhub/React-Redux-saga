@@ -1,0 +1,563 @@
+.virtual-data-table {
+  position: 'relative';
+
+  :global {
+    .btn.grid-tag {
+      margin-right: 0.5rem;
+      margin-top: 0.1rem;
+      margin-bottom: 0.1rem;
+      color: white;
+      background-color: $lendingusa_gray6;
+      &.active {
+        background-color: $accent_color;
+      }
+    }
+    .select-container {
+      width: 10rem;
+      position: relative;
+      select {
+        border: solid 1px $lendingusa_gray2;
+        &.form-control {
+          height: auto;
+          padding: 1rem 0.4rem;
+          -webkit-appearance: none;
+        }
+      }
+      i {
+        top: 1.4rem;
+        right: 1rem;
+      }
+    }
+    .info-label {
+      color: $main_black;
+      font-size: $lendingusa_font_xs;
+      line-height: 4rem;
+    }
+
+    .virtual-data-table-haader {
+      background: white;
+      padding: 1rem;
+      .page-count-container {
+        margin-top: 0.5rem;
+        display: flex;
+        .info-label {
+          margin-left: 1rem
+        }
+      }
+      .header-search {
+        input {
+          margin: 0;
+          border: solid 1px $lendingusa_gray2;
+        }
+        button {
+          top: 0;
+          color: $lendingusa_gray6;
+        }
+      }
+      .header-tag-container {
+        padding: 1rem 0 0;
+        .grid-tag {
+          margin-top: 0.2rem;
+          margin-bottom: 0.2rem;
+        }
+      }
+    }
+    .panel.panel-default {
+      border: none;
+    }
+    .panel-heading {
+      border: none;
+      border-top: 1px solid $gray-100;
+      padding: 0 2rem !important;
+      background: white;
+      min-height: 4rem !important;
+      .btn-group .btn{
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        color: $main_black;
+        border: solid 1px $lendingusa_gray2;
+        box-shadow: none;
+      }
+      div span {
+        color: $accent_color;
+      }
+    }
+    .table-responsive {
+      overflow-x: auto !important;
+
+      .table {
+        margin-top: 0 !important;
+        background: $lendingusa_gray1 !important;
+        overflow: visible !important;
+        border-collapse: collapse !important;
+
+        thead>tr>th {
+          border: none;
+          background: $lendingusa_gray1;
+          font-weight: bold !important;
+          font-size: .784rem !important;
+          color: $gray-700;
+        }
+      }
+    }
+    .i-dropdown {
+      position: absolute;
+      right: 4px;
+      bottom: 0.5rem;
+      border-radius: 0;
+      background: transparent;
+    }
+    .active-dropdown {
+      text-decoration: none;
+      color: #fff;
+      background-color: #3276b1;
+    }
+    thead {
+      background: #dbe3eb !important;
+
+      .fiter-container {
+        display: inline;
+      }
+      tr {
+        font-size: $lendingusa_font_xs;
+        th {
+          padding: .45rem .6rem !important;
+          background-color: transparent !important;
+        }
+      }
+
+      .header-cell {
+        width: 100%;
+        padding-top: 0 !important;
+        .header-cell-container {
+          position: relative;
+          &.has-filter {
+            input.form-control {
+              padding: 1px 3px 2px;
+              height: auto;
+              margin: 0;
+            }
+            .date-picker-container {
+              width: calc(100% - 1.5rem) !important;
+              input.form-control  {
+                width: 100% !important;
+              }
+            }
+            .btn-key {
+              position: absolute;
+              right: 0;
+              top: 0.4rem;
+              padding-right: 0;
+              padding-left: 0;
+              background: transparent;
+              border: none;
+              box-shadow: none;
+              color: $main_black;
+              font-size: 1rem;
+              &:active {
+                left: auto;
+                right: 1px;
+              }
+            }
+          }
+          .check-container {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            
+            select.form-control {
+              width: 100%;
+              height: auto;
+              padding: 1px 3px 2px;
+              -webkit-appearance: none;
+              background: white;
+            }
+          }
+          i {
+            color: $main_black;
+            z-index: 9999;
+          }
+
+        }
+        .dropdown-menu {
+          left: auto;
+          right: 0;
+
+          &.open {
+            display: block;
+          }
+        }
+      }
+    }
+    tbody {
+      border: none !important;
+      tr {
+        font-size: $lendingusa_font_xs;
+        color: $main_black;
+
+        &:nth-child(even) {
+          background-color: $white;
+        }
+        &:nth-child(odd) {
+          background-color: #f1f7fd;
+        }
+        &:hover {
+          background-color: #e8f2fc;
+        }
+        
+        td {
+          padding: 0.6rem;
+          font-size: 0.875rem;
+          color: $gray-700;
+          line-height: 1.4;
+          vertical-align: middle;
+          border: none !important;
+
+          &:first-child {
+            font-weight: bold;
+          }
+
+          &.multi-line-td {
+            position: relative;
+            .td-content {
+              width: 100%;
+              .ellipsis {
+                display: block;
+                display: -webkit-box;
+                max-width: 100%;
+                margin: 0 auto;
+                font-size: 14px;
+                line-height: 2rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-height: 4rem;
+              }
+              .tooltiptext {
+                top: 90%;
+                left: 0.2rem;
+                right: 1.6rem;
+                padding: 0.8rem;
+                visibility: hidden;
+                color: white;
+                border-radius: 6px;
+                position: absolute;
+                z-index: 9999;
+                background: $lendingusa_gray6;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: -1rem;
+                  left: 50%;
+                  margin-left: -5px;
+                  border-width: 5px;
+                  border-style: solid;
+                  border-color: transparent transparent $lendingusa_gray6 transparent;
+                }
+              }
+              &:hover .tooltiptext {
+                visibility: visible;
+                &.tooltip-hide {
+                  visibility: collapse;
+                }
+              }
+            }
+          }
+          .btn {
+            margin-top: -0.5rem;
+            margin-bottom: -0.6rem;
+          }
+
+          .eckbox {
+            text-align: center;
+            label {
+              margin: 0;
+            }
+          }
+          .btn-cell {
+            height: 3.2rem;
+            line-height: 3.2rem;
+            font-size: $lendingusa_font_md;
+            border-radius: 4px;
+            color: white;
+            background-color: $accent_color;
+            padding-left: 7px;
+            padding-right: 7px;
+          }
+          &.btns-td .btn-cell {
+            width: auto;
+            margin-right: 5px;
+          }
+          &.dot-btn-td .btn-cell {
+            width: auto;
+          }
+          &.btn-td .btn-cell {
+            //width: 100%;
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+          &.icon-btn-td .btn-cell {
+            width: 25px;
+            height: 25px;
+            border-radius: 13px;
+            padding: 0;
+          }
+          .btn-cell-disabled {
+            height: 3.2rem;
+            line-height: 3.2rem;
+            font-size: $lendingusa_font_md;
+            border-radius: 4px;
+            color: white;
+            background-color: $lendingusa_gray6;
+            padding-left: 7px;
+            padding-right: 7px;
+            cursor: none;
+          }
+          &.tag-indicator {
+            padding: 1rem 0.6rem;
+          }
+          .tag-indicator-cell {
+            height: 2.2rem;
+            line-height: 2.2rem;
+            font-size: $lendingusa_font_xs;
+            border-radius: 4px;
+            color: white;
+            background-color: $accent_color;
+            padding-left: 4px;
+            padding-right: 4px;
+          }
+
+          .badge {
+            font-size: 0.784rem;
+            text-transform: capitalize;
+            letter-spacing: 0;
+            width: 100%;
+            box-shadow: none;
+          }
+        }
+
+        &:last-child {
+          td.multi-line-td .td-content {
+            .tooltiptext {
+              top: auto;
+              bottom: 90%;
+              left: 0.2rem;
+              right: 1.6rem;
+              padding: 0.8rem;
+              color: white;
+              border-radius: 6px;
+              position: absolute;
+              z-index: 9999;
+              background: $lendingusa_gray6;
+              &::after {
+                content: "";
+                position: absolute;
+                top: auto;
+                bottom: -1rem;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: $lendingusa_gray6 transparent transparent transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+    .btn-td {
+      .button {
+        margin: 0 !important;
+        padding: 2px 10px !important;
+        width: auto;
+        border-radius: 4px;
+      }
+    }
+    .page-toolbar-container {
+      background: white;
+      border: solid 1px $lendingusa_gray2;
+      .size-toolbar {
+        text-align: right;
+        padding: 0.4rem 0.6rem;
+        color: $main_black;
+        font-size: $lendingusa_font_md;
+        border-bottom: solid 1px $lendingusa_gray2;
+      }
+      .page-toolbar {
+        padding: 1rem 1rem 0.3rem;    
+        .pagination-container {
+          text-align: center;
+          
+          .pagination {
+            margin: 0;
+            padding: 0;
+
+            .current {
+              position: inherit;
+            }
+
+            .previous, .next {
+              a {
+                color: $accent_color;
+              }
+            }
+            li {
+              a {
+                height: 3rem;
+                min-width: 2rem;
+                font-size: $lendingusa_font_xs;
+                line-height: 3rem;
+                padding: 0;
+                margin: 0 0.5rem;
+                text-align: center;
+                color: $main_black;
+                border: solid 2px $lendingusa_gray2;
+                border-radius: 4px;
+                box-shadow: none;
+                
+                &:hover {
+                  background-color: transparent;
+                  border-color: $accent_color;
+                  color: $accent_color;
+                }
+              }
+              &.active a {
+                background: transparent;
+                border-color: $accent_color;
+                color: $accent_color;
+                font-size: $lendingusa_font_xs;
+              }
+            }
+          }
+        }
+
+        .page-count-container {
+          & > div {
+            float: right;
+          }
+          .form-control:focus {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  padding: 0 !important;
+  margin-bottom: 0;
+  justify-content: center;
+
+  .current {
+    top: 0 !important;
+    border: none;
+
+    a {
+      box-shadow: 0 2px 8px 1px rgba(0,0,0,0.07);
+      color: #002248;
+    }
+  }
+
+  li {
+    outline: none;
+    margin: 0 7px !important;
+    position: relative;
+    border-radius: 0;
+
+    &::before {
+      display: none;
+    }
+
+    &:hover {
+      &::before {
+        display: none;
+      }
+    }
+    a {
+      outline: none;
+      background-color: #FFF;
+      border: 2px solid $gray-200;
+    }
+  }
+}
+
+.linkColor {
+  color: $main_black;
+}
+
+.status {
+  line-height: 18px;
+  padding: 2px 6px !important;
+}
+
+.status-2000 {
+  background-color: #4a86e8 !important;
+}
+
+.status-2001 {
+  background-color: #4a86e8 !important;
+}
+
+.status-2002 {
+  background-color: #4a86e8 !important;
+}
+
+.status-2003,
+.status-2008,
+.status-2014 {
+  background-color: #ff9900 !important;
+}
+
+.status-2004 {
+  background-color: #6aa84f;
+}
+
+.status-2005,
+.status-2006,
+.status-2007,
+.status-2029 {
+  background-color: #674ea7 !important;
+}
+
+.status-2008 {
+  background-color: #ff9900 !important;
+}
+
+.status-2009,
+.status-2010,
+.status-2011 {
+  background-color: #6aa84f !important;
+}
+
+.status-2012,
+.status-2013,
+.status-2015,
+.status-2016,
+.status-2017,
+.status-2019 {
+  background-color: #6aa84f !important;
+}
+
+.status-2018,
+.status-2020,
+.status-2021,
+.status-2022,
+.status-2023,
+.status-2025,
+.status-2026,
+.status-2027,
+.status-2028 {
+  background-color: #6aa84f !important;
+}
+
+.status-2024 {
+  background-color: #000000 !important;
+}
+
+.takeAction {
+  padding: .3em 1em !important;
+  margin-bottom: 0;
+  font-size: 14px;
+}

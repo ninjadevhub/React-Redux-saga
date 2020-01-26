@@ -1,0 +1,41 @@
+.Toastify__toast-container {
+  @include media-breakpoint-up(md) {
+    width: 600px;
+
+    &--top-center {
+      margin-left: -300px;
+    }
+  }
+
+  .Toastify__toast {
+    padding: ($gutter-sm + 1) 25px $gutter-sm;
+
+    @include media-breakpoint-up(sm) {
+      border-radius: $border-radius-lg;
+      box-shadow: inset 0 0 0 3px rgba(0,0,0,0.05), $box-shadow-dark;
+    }
+
+    &--info {
+      background-color: $primary;
+    }
+
+    h5 {
+      color: $white;
+       margin-bottom: 0;
+    }
+  }
+}
+
+.Toastify__close-button {
+  background: url(/icons/close-white.svg) 50% no-repeat;
+  height: 30px;
+  margin-right: -8px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 28px;
+}
+
+.Toastify__progress-bar {
+  height: 3px;
+}

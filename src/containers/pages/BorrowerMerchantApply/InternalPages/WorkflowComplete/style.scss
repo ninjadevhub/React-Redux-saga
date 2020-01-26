@@ -1,0 +1,59 @@
+.button {
+  margin-top: $lendingusa_spacing_md + 2;
+}
+
+.modal {
+  border-radius: 0;
+  max-width: 670px;
+}
+
+.buttonWidth {
+  width: 180px;
+}
+
+.size-xs {
+  font-size: $lendingusa_font_xs;
+}
+
+:global {
+  .rangeslider-horizontal {
+    height: 4px;
+    border-radius: 0;
+
+    .rangeslider__handle {
+      border: 2px solid #039958;
+      border-radius: 50%;
+      background-color: #04bc6c;
+      box-shadow: 0 4px 15px 1px rgba(0,0,0,.2);
+      width: 44px;
+      height: 44px;
+
+      &::after {
+        display: none;
+      }
+
+      .rangeslider__handle-tooltip {
+        width: 60px;
+        height: 35px;
+      }
+    }
+  }
+  .rangeslider__fill {
+    background-color: $light_gray !important;
+  }
+}
+
+.encryption {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.noBottomMargin {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.securityLock {
+  width: 40px;
+}

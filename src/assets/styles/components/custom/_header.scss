@@ -1,0 +1,199 @@
+.navbar {
+  background-color: $white;
+  box-shadow: $box-shadow;
+  min-height: 60px;
+  padding: 0 $gutter-sm;
+
+  .navbar-brand {
+    background: url(/images/portal-logo.svg) 0 50% no-repeat;
+    background-size: contain;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    width: 220px;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      font-weight: $font-weight-bold;
+      transition: all 0.15s linear;
+
+      svg g {
+        transition: all 0.15s linear;
+      }
+
+      &:hover {
+        color: $gray-900;
+
+        svg g {
+          fill: $gray-900 !important;
+        }
+      }
+
+      &.active {
+        color: $primary;
+
+        svg g {
+          fill: $primary !important;
+        }
+      }
+    }
+  }
+
+  .phoneNumber {
+    line-height: 27px;
+    text-align: right;
+    font-size: 18px;
+    align-items: center !important;
+    color: #3989E3 !important;
+    letter-spacing: -0.64px;
+
+    span {
+      line-height: 21px;
+      font-size: 16px;
+      font-weight: 600;
+      display: inline;
+    }
+
+    strong {
+      font-size: 16px;
+      font-weight: 900;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .navbar-nav {
+      background-color: $light;
+      left: -$grid-gutter-width;
+      position: relative;
+      width: calc(100% + 50px) !important;
+
+      .phoneNumber {
+        line-height: 27px;
+        text-align: left;
+        font-size: 18px;
+    
+        span {
+          line-height: 21px;
+          display: block;
+          color: #002147;
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+
+      .nav-link {
+        box-shadow: inset 0 1px 0 0 rgba($black, 0.075);
+        padding: 0.813rem $grid-gutter-width;
+
+        svg {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+  }
+
+  @include media-breakpoint-up(lg) {
+    min-height: 70px;
+    padding: 0 $gutter-lg;
+
+    .navbar-brand {
+      background-size: 284px;
+      height: 70px;
+      width: 284px;
+    }
+
+    .navbar-nav {
+      .nav-item {
+        display: flex;
+      }
+
+      .nav-link {
+        align-items: center;
+        display: flex;
+      }
+
+      .lu-main-nav {
+        .nav-link {
+          height: 70px;
+          padding: 0 $gutter-md;
+          position: relative;
+
+          &:after {
+            background-color: $gray-200;
+            content: " ";
+            display: block;
+            height: 3px;
+            left: $gutter-md;
+            opacity: 0;
+            position: absolute;
+            right: $gutter-md;
+            top: 0;
+          }
+
+          &.active:after {
+            opacity: 1;
+          }
+
+          svg {
+            margin-right: 10px;
+            vertical-align: sub;
+          }
+        }
+      }
+
+      .lu-second-nav {
+        align-items: center;
+
+        .nav-item {
+          .nav-link {
+            padding-left: 12px;
+            padding-right: 12px;
+          }
+
+          &:last-of-type .nav-link {
+            border-left: $border-width solid $gray-200;
+            margin: 0 0 0 ($grid-gutter-width - 12px);
+            padding: 0 0 0 $grid-gutter-width;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    .navbar-brand {
+      width: 360px;
+    }
+  }
+
+  .navbar-toggler {
+    border: 0;
+    padding: 0;
+    position: relative;
+    outline: none;
+    transition: all 0.15s linear;
+
+    &:after {
+      bottom: -3px;
+      border-radius: $border-radius-sm;
+      box-shadow: 0 0 0 2px rgba($primary, 0.5);
+      content: " ";
+      left: -3px;
+      opacity: 0;
+      position: absolute;
+      right: -3px;
+      top: -3px;
+      transition: opacity 0.15s linear;
+    }
+
+    &:focus:after {
+      opacity: 1;
+    }
+  }
+}

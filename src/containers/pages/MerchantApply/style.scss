@@ -1,0 +1,26 @@
+.encryption {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.noBottomMargin {
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.securityLock {
+  width: 40px;
+}
+
+.sidebar-help {
+  a {
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.icon {
+  margin-right: $lendingusa_spacing_xs;
+}

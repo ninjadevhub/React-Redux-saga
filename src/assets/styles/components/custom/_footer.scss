@@ -1,0 +1,35 @@
+.legal {
+  margin: 0 auto !important;
+  width: 100%;
+}
+
+.security {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .digicertImage {
+    margin-right: 30px;
+  }
+}
+
+.copyright {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  p {
+    align-self: center;
+    margin-top: 35px;
+    text-align: left;
+  }
+}
+
+.creditOfferConfirmation {
+  border-top: 0 !important;
+  padding: 0 15px !important;
+}
+
+.default-footer {
+  display: flex;
+  justify-content: space-between;
+}

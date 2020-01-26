@@ -1,0 +1,134 @@
+.noScroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.zIndex {
+  z-index: 9999;
+  @media print {
+    overflow: scroll;
+  }
+}
+
+.modalContainer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  overflow: auto;
+  background-color: $lendingusa_black_40;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  &.centerContent {
+    padding-top: 0;
+    align-items: center;
+  }
+  &.topContent {
+    padding-top: lendingusa_spacing_xlg;
+  }
+}
+
+.dialog {
+  position: relative;
+  background-color: $lendingusa_gray1;
+  min-width: 320px;
+  padding: $lendingusa_spacing_lg + 20;
+}
+
+.fullScreen {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  padding-left: 130px;
+  padding-right: 130px;
+  background-color: lendingusa_gray6;
+  color: $lendingusa_gray1;
+  .closeIcon {
+    height: 20px;
+    width: 20px;
+    right: $lendingusa_spacing_md;
+    top: $lendingusa_spacing_md;
+    path {
+      stroke: $lendingusa_gray3;
+    }
+  }
+}
+
+.logo {
+  position: absolute;
+  left: $lendingusa_spacing_sm - 2;
+  top: $lendingusa_spacing_md;
+  height: 54px;
+  width: 132px;
+  cursor: pointer;
+  path {
+    fill: $lendingusa_gray2;
+  }
+  @media (min-width: 991px) {
+    left: $lendingusa_spacing_md;
+  }
+  @media print {
+    visibility: visible;
+    fill: $main_black;
+  }
+}
+
+.closeIcon {
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  right: 21px;
+  top: 21px;
+  cursor: pointer;
+  z-index: 10;
+  path {
+    pointer-events: none;
+    stroke: $lendingusa_gray2;
+  }
+}
+
+
+:global(.modal-enter) {
+  transition: background-color 300ms;
+  overflow: hidden;
+  background-color: transparent;
+
+  .dialog {
+    animation: anim-open 300ms;
+  }
+}
+
+:global(.modal-enter.modal-enter-active) {
+  background-color: $lendingusa_black_overlay;
+  .dialog{
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+:global(.modal-exit) {
+  transition: opacity 300ms;
+  .dialog {
+    transition: transform 300ms;
+  }
+}
+
+:global(.modal-exit.modal-exit-active) {
+  opacity: 0;
+  .dialog {
+    transform: scale3d(.9, .9, 1)
+  }
+}
+
+@keyframes anim-open {
+	0% { opacity: 0; transform: scale3d(1.1, 1.1, 1); }
+	100% { opacity: 1; transform: scale3d(1, 1, 1); }
+}

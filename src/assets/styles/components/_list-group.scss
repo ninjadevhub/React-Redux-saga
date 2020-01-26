@@ -1,0 +1,26 @@
+.list-group-item {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0 !important;
+  box-shadow: 0 -1px 0 0 rgba($black, 0.075);
+  margin-left: $grid-gutter-width;
+  padding: $gutter-md $gutter-md $gutter-md 0;
+
+  small {
+    color: $gray-600;
+    transition: all 0.15s linear;
+  }
+}
+
+a.list-group-item {
+  &:hover {
+    h1, h2, h3, h4, h5 {
+      color: $black;
+    }
+
+    small {
+      color: $gray-900;
+    }
+  }
+}

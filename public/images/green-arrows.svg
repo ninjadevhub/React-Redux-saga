@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="42px" viewBox="0 0 30 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Application-Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2c---Borrowers---Denied---Offer-v3" transform="translate(-650.000000, -476.000000)" fill="#1DC17C" fill-rule="nonzero">
+            <g id="Group-20" transform="translate(600.000000, 476.000000)">
+                <path d="M77.1532624,24.5384087 L70.2010133,22.902766 L70.2010133,40.2759441 C70.2010133,41.2042819 69.448222,42 68.4740215,42 L61.5660543,42 C60.6361356,42 59.8390625,41.2484885 59.8390625,40.2759441 L59.8390625,22.902766 L52.8868134,24.5384087 C50.8498487,25.0246808 49.2557024,22.7701463 50.3627484,21.0018839 L62.9830732,1.10893173 C63.2487642,0.711072688 63.603019,0.357420205 64.0458374,0.180593964 C65.1528834,-0.261471639 66.3484931,0.136387404 66.9241571,1.06472517 L79.5887636,21.0018839 C80.7843734,22.8143528 79.1902271,25.0246808 77.1532624,24.5384087 Z" id="Shape" transform="translate(65.000000, 21.000000) scale(1, -1) translate(-65.000000, -21.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

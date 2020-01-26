@@ -1,0 +1,46 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  min-height: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  padding-bottom: 36px;
+  position: relative;
+}
+
+.container-body {
+  padding: $grid-gutter-width 0;
+
+  @include media-breakpoint-up(md) {
+    padding: $grid-gutter-width $gutter-sm;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: $grid-gutter-width ($gutter-lg - ($grid-gutter-width/2));
+  }
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+// Temporary: Remove after charts framework added
+.chart {
+  align-items: center;
+  background: $gray-200;
+  border-radius: $border-radius;
+  display: flex;
+  height: 230px;
+  justify-content: center;
+  margin-bottom: $gutter-md;
+}

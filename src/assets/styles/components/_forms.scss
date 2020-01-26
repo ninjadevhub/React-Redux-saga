@@ -1,0 +1,104 @@
+.page-applications,
+.page-dashboard {
+  label {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-bold;
+  }
+
+  select,
+  .select {
+    -webkit-appearance: none;
+  }
+
+  .card .form-control {
+    background-color: $input-bg-card;
+  }
+
+  .form-control {
+    &:disabled {
+      cursor: no-drop;
+    }
+  }
+}
+
+label.custom-control-label {
+  font-size: $font-size-sm;
+  padding-top: 2px;
+  line-height: 1.4;
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: .25rem;
+    left: -1.5rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    content: "";
+  }
+
+  &::before {
+    pointer-events: none;
+    background-color: #fff;
+    border: 2px solid #b0acbe;
+  }
+}
+
+.form-control {
+  &:disabled {
+    cursor: no-drop;
+  }
+}
+
+.filepond--wrapper {
+  .filepond--panel-root {
+    border-radius: $border-radius;
+    background-color: $gray-100;
+  }
+
+  .filepond--drop-label {
+    text-align: center;
+
+    label {
+      color: $primary;
+      font-size: $font-size-sm;
+      left: 0;
+      padding: 18px 0;
+      width: 100%;
+
+      .filepond--label-action {
+        text-decoration-color: $primary;
+        color: $primary;
+        display: inline;
+        position: inherit;
+        top: inherit;
+        left: inherit;
+        padding: 0;
+      }
+    }
+  }
+
+  .filepond--file {
+    border-radius: $border-radius;
+  }
+}
+
+form.inline-fill {
+  border-radius: $border-radius;
+
+  @include media-breakpoint-up(md) {
+    background-color: $gray-200;
+  }
+
+  .connector {
+    font-weight: $font-weight-bold;
+    font-size: $font-size-sm;
+    line-height: 40px;
+    padding: 0;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      line-height: 54px;
+    }
+  }
+}

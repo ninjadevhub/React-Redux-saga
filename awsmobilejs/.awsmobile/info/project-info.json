@@ -1,0 +1,23 @@
+{
+	"ProjectName": "merchant-portal-frontend",
+	"ProjectPath": "C:\\Users\\rameshs\\work\\lusa\\frontend\\merchant-portal-frontend",
+	"SourceDir": "src",
+	"DistributionDir": "build",
+	"BuildCommand": "npm.cmd run-script build",
+	"StartCommand": "npm.cmd run-script start",
+	"InitializationTime": "2018-04-23-10-55-54",
+	"LastConfigurationTime": "2018-04-23-10-56-03",
+	"LastNPMInstallTime": "2018-12-06-12-58-50",
+	"FrontendLastBuildTime": "2018-12-06-13-15-31",
+	"LastPublishTime": "2018-12-06-13-15-47",
+	"BackendFormat": "yml",
+	"BackendLastSyncTime": "2018-12-06-13-11-46",
+	"BackendLastBuildTime": "2018-12-06-13-11-38",
+	"BackendLastPushTime": "2018-12-06-13-11-40",
+	"BackendLastPushSuccessful": true,
+	"BackendProjectID": "347eb1c9-e984-4931-8aed-8b2535db323b",
+	"BackendProjectName": "merchant-portal-frontend",
+	"BackendProjectConsoleUrl": "https://console.aws.amazon.com/mobilehub/home#/347eb1c9-e984-4931-8aed-8b2535db323b/build",
+	"BackendProjectCreationTime": "2018-04-23T17:54:42.857Z",
+	"BackendProjectLastUpdatedTime": "2018-12-06T21:11:40.419Z"
+}

@@ -1,0 +1,34 @@
+.lu-offer-card {
+  box-shadow: $box-shadow-dark;
+
+  .lu-offer-cta {
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
+
+  .btn {
+    margin-top: $grid-gutter-width;
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      top: 50%;
+      transform: translateY(calc(-50% - 25px));
+      right: $grid-gutter-width;
+      width: auto;
+    }
+
+    @include media-breakpoint-up(lg) {
+      bottom: 75px;
+      left: $grid-gutter-width;
+      position: absolute;
+      top: auto;
+      transform: none;
+      right: auto;
+      width: calc(100% - 50px);
+    }
+  }
+}

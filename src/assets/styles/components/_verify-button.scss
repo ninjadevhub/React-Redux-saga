@@ -1,0 +1,60 @@
+.smarty-tag-check {
+  padding-left: 4px;
+  text-decoration: none;
+  border: 1px solid #B4B4B4;
+  color: #999;
+  background: #DDD;
+  box-shadow: inset 0 9px 15px #FFF;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  font: 15px/1.2em sans-serif;
+  width: 130px;
+  height: 40px;
+  pointer-events: visible;
+  position: absolute;
+  top: 2px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  right: 2px;
+  margin-right: 12.5px;
+
+  &:hover {
+    cursor: pointer;
+    border-color: #333;
+    transition: all 0.2s linear;
+  }
+}
+
+.verifyText {
+  width: 100%;
+  text-align: center;
+  padding-right: 6px;
+}
+
+.smarty-tag-green {
+  border: 1px solid #407513;
+  color: #407513;
+  background: #A6D187;
+  box-shadow: inset 0 9px 15px #E3F6D5;
+}
+
+.smarty-ui-loading {
+  position: absolute;
+  z-index: 999;
+  text-shadow: none;
+  text-align: left;
+  text-decoration: none;
+  top: 18px;
+  left: 100%;
+  margin-left: -175px;
+}
+
+.smarty-dots {
+  position: absolute;
+  z-index: 999;
+  width: 24px;
+  height: 8px;
+  background-image: url('/assets/images/loading.gif');
+}

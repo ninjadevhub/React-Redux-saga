@@ -1,0 +1,50 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "cicd-merchant-portal-dev-20191101202627-authRole",
+            "UnauthRoleArn": "arn:aws:iam::307473555792:role/cicd-merchant-portal-dev-20191101202627-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::307473555792:role/cicd-merchant-portal-dev-20191101202627-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "cicd-merchant-portal-dev-20191101202627-deployment",
+            "UnauthRoleName": "cicd-merchant-portal-dev-20191101202627-unauthRole",
+            "StackName": "cicd-merchant-portal-dev-20191101202627",
+            "StackId": "arn:aws:cloudformation:us-west-2:307473555792:stack/cicd-merchant-portal-dev-20191101202627/c99439a0-fcb7-11e9-8a24-069045656416"
+        }
+    },
+    "stage": {
+        "awscloudformation": {
+            "AuthRoleName": "cicd-merchant-portal-stage-20191104131308-authRole",
+            "UnauthRoleArn": "arn:aws:iam::307473555792:role/cicd-merchant-portal-stage-20191104131308-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::307473555792:role/cicd-merchant-portal-stage-20191104131308-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "cicd-merchant-portal-stage-20191104131308-deployment",
+            "UnauthRoleName": "cicd-merchant-portal-stage-20191104131308-unauthRole",
+            "StackName": "cicd-merchant-portal-stage-20191104131308",
+            "StackId": "arn:aws:cloudformation:us-west-2:307473555792:stack/cicd-merchant-portal-stage-20191104131308/bfa63cb0-fed6-11e9-823b-02e1301110e6"
+        }
+    },
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "cicd-merchant-portal-prod-20191104133806-authRole",
+            "UnauthRoleArn": "arn:aws:iam::307473555792:role/cicd-merchant-portal-prod-20191104133806-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::307473555792:role/cicd-merchant-portal-prod-20191104133806-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "cicd-merchant-portal-prod-20191104133806-deployment",
+            "UnauthRoleName": "cicd-merchant-portal-prod-20191104133806-unauthRole",
+            "StackName": "cicd-merchant-portal-prod-20191104133806",
+            "StackId": "arn:aws:cloudformation:us-west-2:307473555792:stack/cicd-merchant-portal-prod-20191104133806/3c57bf60-feda-11e9-a6e8-0abfc2a88834"
+        }
+    },
+    "demo": {
+        "awscloudformation": {
+            "AuthRoleName": "cicd-merchant-portal-demo-20191104140814-authRole",
+            "UnauthRoleArn": "arn:aws:iam::307473555792:role/cicd-merchant-portal-demo-20191104140814-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::307473555792:role/cicd-merchant-portal-demo-20191104140814-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "cicd-merchant-portal-demo-20191104140814-deployment",
+            "UnauthRoleName": "cicd-merchant-portal-demo-20191104140814-unauthRole",
+            "StackName": "cicd-merchant-portal-demo-20191104140814",
+            "StackId": "arn:aws:cloudformation:us-west-2:307473555792:stack/cicd-merchant-portal-demo-20191104140814/724bdd00-fede-11e9-b8a3-06ca8b36c6d4"
+        }
+    }
+}

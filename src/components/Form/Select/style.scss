@@ -1,0 +1,29 @@
+.selectLabel {
+  width: 100%;
+
+  span {
+    em {
+      top: -2px;
+      padding: 1px 5px 2px;
+    }
+  }
+
+  .error {
+    height: 20px;
+    position: relative;
+    left: lendingusa_spacing_xs - 7;
+    color: $accent_color;
+    padding-left: 18px;
+    font-size: 12px;
+    word-wrap: break-word;
+    font-size: 14px;
+    margin: 0 0 $lendingusa_spacing_xs -2;
+  }
+
+  .select {
+    margin: 0;
+    background-color: #fff !important;
+    appearance: none;
+    background-image: none;
+  }
+}

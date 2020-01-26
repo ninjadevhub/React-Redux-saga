@@ -1,0 +1,3 @@
+awsmobilejs/ merge=ours
+src/config/appConfig.js merge=ours
+src/aws-exports.js merge=ours
