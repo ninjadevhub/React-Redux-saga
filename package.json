@@ -86,7 +86,7 @@
     "sw-precache-webpack-plugin": "0.11.4",
     "text-mask-addons": "^3.7.1",
     "url-loader": "0.6.2",
-    "validator": "^9.4.1",
+    "validator": "^13.7.0",
     "web-form-validator": "^0.1.8",
     "webpack": "3.8.1",
     "webpack-dev-server": "2.9.4",
