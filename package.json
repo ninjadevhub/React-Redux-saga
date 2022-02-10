@@ -142,7 +142,7 @@
   },
   "devDependencies": {
     "classnames": "^2.2.5",
-    "node-sass": "^4.9.4",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.6.0",
     "redux-immutable-state-invariant": "^2.1.0",
     "redux-logger": "^3.0.6",
