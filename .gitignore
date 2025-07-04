@@ -1,11 +1,10 @@
 /nbproject/
 /.idea/*
 *.tmlanguage.cache
+temp_auto_push.bat
 *.tmPreferences.cache
 *.stTheme.cache
 *.sublime-workspace
 *.sublime-project
-node_modules/
-bin/
-obj/
-.vs/
+.gitignore
+temp_interactive_push.bat
